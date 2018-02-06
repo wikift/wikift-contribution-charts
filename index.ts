@@ -15,23 +15,5 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { HttpModule } from '@angular/http';
-
-import { AppComponent } from './app.component';
-import { WikiftContributionModule } from '../directives/wikift-contribution/wikift-contribution.module';
-
-@NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    HttpModule,
-    BrowserModule,
-    WikiftContributionModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
+export { WikiftContributionConfig } from './src/directives/wikift-contribution/model/wikift-contribution.model';
+export * from './src/directives/wikift-contribution/wikift-contribution.module';
