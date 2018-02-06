@@ -15,23 +15,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { HttpModule } from '@angular/http';
+export class WikiftContributionConfig {
 
-import { AppComponent } from './app.component';
-import { WikiftContributionModule } from '../directives/wikift-contribution/wikift-contribution.module';
+    // 渲染的数据颜色
+    public color = '#7bc96f';
+    // 默认填充颜色
+    public fillColor = '#ebedf0';
+    // 渲染的数据展示时区
+    public locale = 'zh-cn';
+    // 当后端数据传递为非全年数据, 是否自动填充数据
+    public isFill = false;
 
-@NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    HttpModule,
-    BrowserModule,
-    WikiftContributionModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
+    constructor() {
+    }
+
+}
